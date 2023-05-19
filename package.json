@@ -1,11 +1,15 @@
 {
     "name": "json-server-node",
     "version": "1.0.0",
+    "description": "",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+        "dev": "node server.js",
+        "start": "node server.js",
+        "watch": "json-server db.json --port=6000"
     },
-    "dependencies": {
-      "json-server": "^0.17.3"
+    "devDependencies": {
+        "clone": "^2.1.2",
+        "json-server": "^0.17.3"
     }
-  }
+}
