@@ -1,8 +1,8 @@
 const jsonServer = require('json-server');
-const date = require('./db.json');
+const data = require('./db.json');
 
 const server = jsonServer.create();
-const router = jsonServer.router(date);
+const router = jsonServer.router(data);
 const middLewares = jsonServer.defaults();
 
 server.use(middLewares);
